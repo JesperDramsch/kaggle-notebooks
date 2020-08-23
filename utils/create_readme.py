@@ -31,6 +31,7 @@ for name, info in competition.items():
     badges = f"[![](https://img.shields.io/badge/view-notebook-orange)]({name}) [![](https://img.shields.io/badge/open-colab-yellow)](https://colab.research.google.com/github/jesperdramsch/kaggle-notebooks/blob/master/notebooks-competition/{name}.ipynb) [![](https://img.shields.io/badge/kaggle-notebook-blue)](https://www.kaggle.com/{name})"
     string += f"## {medal(kernel.totalVotes, correction.get(name, 0))} {kernel.title} \n {badges}\n\n{info}\n\n"
 
+string += "## Free-style Notebooks\n"
 for name, info in freestyle.items():
     kernel = api.kernels_list(search=name)[0]
     badges = f"[![](https://img.shields.io/badge/view-notebook-orange)]({name}) [![](https://img.shields.io/badge/open-colab-yellow)](https://colab.research.google.com/github/jesperdramsch/kaggle-notebooks/blob/master/notebooks-freestyle/{name}.ipynb) [![](https://img.shields.io/badge/kaggle-notebook-blue)](https://www.kaggle.com/{name})"
