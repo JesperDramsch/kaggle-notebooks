@@ -29,6 +29,7 @@ First reinforcement learning playground using Connect 4 on Kaggle to test new en
 
 Deep Fake competition to identify visual and sound manipulation usually using GANs in video footage.
 
+## Free-style Notebooks
 ## 🥈 The Reason We're Happy 
  [![](https://img.shields.io/badge/view-notebook-orange)](the-reason-we-re-happy) [![](https://img.shields.io/badge/open-colab-yellow)](https://colab.research.google.com/github/jesperdramsch/kaggle-notebooks/blob/master/notebooks-freestyle/the-reason-we-re-happy.ipynb) [![](https://img.shields.io/badge/kaggle-notebook-blue)](https://www.kaggle.com/the-reason-we-re-happy)
 
