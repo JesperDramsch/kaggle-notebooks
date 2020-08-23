@@ -1,6 +1,9 @@
 name: Rebuild Readme
 
-on: [push]
+on: 
+  push:
+  schedule:
+    - cron: '0 * * * *'
 
 jobs:
   build:
@@ -26,5 +29,9 @@ jobs:
       run: |
         python ./utils/create_readme.py
     - name: commit rendered README
-      run: |
-        git commit -m "Automatically Built Readme" && git push origin master || echo "No changes to commit"
+      run: |-
+        git diff
+        git config --global user.email "readme-bot@example.com"
+        git config --global user.name "README-bot"
+        git diff --quiet || (git add README.md && git commit -m "Updated README")
+        git push
