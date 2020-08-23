@@ -15,9 +15,7 @@ jobs:
       uses: actions/setup-python@v2
       with:
         # Semantic version range syntax or exact version of a Python version
-        python-version: '3.x' 
-        # Optional - x64 or x86 architecture, defaults to x64
-        architecture: 'x64' 
+        python-version: '3.x'
     # You can test your matrix by printing the current Python version
     - name: Install dependencies
       run: |
@@ -27,3 +25,6 @@ jobs:
     - name: Run Script
       run: |
         python ./utils/create_readme.py
+    - name: commit rendered README
+      run: |
+        git commit -m "Automatically Built Readme" && git push origin master || echo "No changes to commit"
