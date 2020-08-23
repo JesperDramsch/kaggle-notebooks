@@ -36,5 +36,5 @@ for name, info in freestyle.items():
     badges = f"[![](https://img.shields.io/badge/view-notebook-orange)]({name}) [![](https://img.shields.io/badge/open-colab-yellow)](https://colab.research.google.com/github/jesperdramsch/kaggle-notebooks/blob/master/notebooks-freestyle/{name}.ipynb) [![](https://img.shields.io/badge/kaggle-notebook-blue)](https://www.kaggle.com/{name})"
     string += f"## {medal(kernel.totalVotes, correction.get(name, 0))} {kernel.title} \n {badges}\n\n{info}\n\n"
 
-with open("Readme.md", "w", encoding="utf-8") as f:
+with open("README.md", "w", encoding="utf-8") as f:
     f.write(string)
