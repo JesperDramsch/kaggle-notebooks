@@ -29,6 +29,16 @@ First reinforcement learning playground using Connect 4 on Kaggle to test new en
 
 Deep Fake competition to identify visual and sound manipulation usually using GANs in video footage.
 
+### 🥉 How to paint with GANs [Least Squares GAN Starter] 
+ [![](https://img.shields.io/badge/view-notebook-orange)](how-to-paint-with-gans-least-squares-gan-starter) [![](https://img.shields.io/badge/open-colab-yellow)](https://colab.research.google.com/github/jesperdramsch/kaggle-notebooks/blob/master/notebooks-competition/how-to-paint-with-gans-least-squares-gan-starter.ipynb) [![](https://img.shields.io/badge/kaggle-notebook-blue)](https://www.kaggle.com/how-to-paint-with-gans-least-squares-gan-starter)
+
+Least Squares GAN on TPU to generate Monet painting from noise. Uses data augmentation to enrich the training set.
+
+### 🥉 How to paint with MORE GANs [LS CycleGAN & Aug] 
+ [![](https://img.shields.io/badge/view-notebook-orange)](how-to-paint-with-more-gans-ls-cyclegan-aug) [![](https://img.shields.io/badge/open-colab-yellow)](https://colab.research.google.com/github/jesperdramsch/kaggle-notebooks/blob/master/notebooks-competition/how-to-paint-with-more-gans-ls-cyclegan-aug.ipynb) [![](https://img.shields.io/badge/kaggle-notebook-blue)](https://www.kaggle.com/how-to-paint-with-more-gans-ls-cyclegan-aug)
+
+CycleGAN on TPUs to generate Monet painting from photographs. Uses Least Squares implementation of GANs to improve training and also implements some basic augmentation to get the competition going.
+
 ## Free-style Notebooks
 ### 🥈 The Reason We're Happy 
  [![](https://img.shields.io/badge/view-notebook-orange)](the-reason-we-re-happy) [![](https://img.shields.io/badge/open-colab-yellow)](https://colab.research.google.com/github/jesperdramsch/kaggle-notebooks/blob/master/notebooks-freestyle/the-reason-we-re-happy.ipynb) [![](https://img.shields.io/badge/kaggle-notebook-blue)](https://www.kaggle.com/the-reason-we-re-happy)
