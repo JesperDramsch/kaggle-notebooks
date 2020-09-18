@@ -19,7 +19,7 @@ Medical competition to identify pneumothorax in chest X-rays. Data provided in m
 
 Fun kaggle competition to optimize allocation for families wanting to visit Santa's workshop. Optimization challenge where the global optimum was soon found.
 
-### 🥈 Intro to ConnextX Env and Minimax 
+### 🥇 Intro to ConnextX Env and Minimax 
  [![](https://img.shields.io/badge/view-notebook-orange)](intro-to-connextx-env-and-minimax) [![](https://img.shields.io/badge/open-colab-yellow)](https://colab.research.google.com/github/jesperdramsch/kaggle-notebooks/blob/master/notebooks-competition/intro-to-connextx-env-and-minimax.ipynb) [![](https://img.shields.io/badge/kaggle-notebook-blue)](https://www.kaggle.com/intro-to-connextx-env-and-minimax)
 
 First reinforcement learning playground using Connect 4 on Kaggle to test new environment. Agents play against each other on the leaderboard. ConnectX is usually best approach by the Negamax algorithm, a Minimax variant.
