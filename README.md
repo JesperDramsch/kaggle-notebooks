@@ -29,7 +29,7 @@ First reinforcement learning playground using Connect 4 on Kaggle to test new en
 
 Deep Fake competition to identify visual and sound manipulation usually using GANs in video footage.
 
-### 🥉 Getting started with standard GANs - Tutorial 
+### 🥈 Getting started with standard GANs - Tutorial 
  [![](https://img.shields.io/badge/view-notebook-orange)](getting-started-with-standard-gans-tutorial) [![](https://img.shields.io/badge/open-colab-yellow)](https://colab.research.google.com/github/jesperdramsch/kaggle-notebooks/blob/master/notebooks-competition/getting-started-with-standard-gans-tutorial.ipynb) [![](https://img.shields.io/badge/kaggle-notebook-blue)](https://www.kaggle.com/getting-started-with-standard-gans-tutorial)
 
 Least Squares GAN on TPU to generate Monet painting from noise. Uses data augmentation to enrich the training set.
