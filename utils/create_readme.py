@@ -16,7 +16,8 @@ freestyle = {"the-reason-we-re-happy": "Exploration of the 'World Happiness Repo
             "berlin-airbnbs-is-it-really-all-about-location": "AirBnB has been a source of income for many with a spare room, but become controversial due to commercial players buying apartments to rent out on the platform. In this analysis, we are looking at AirBnB data in Berlin, Germany. The questions are, what is the main influence on price of a rental. These questions are important for tourism, city planning, and renters alike. Where do affluent tourists rent AirBnBs? What decides a good price of your flat. Where can city planners accomodate for this new development of short term rental on the market?",}
 
 ## Sad times
-correction = {}
+correction = {"getting-started-with-standard-gans-tutorial": -1,
+              "understanding-and-improving-cyclegans-tutorial": -1,}
 
 medal = lambda num, corr: ["", "🥉", "🥈", "🥇"][(num >= 5) + (num >= 20) + (num >= 50) + corr]
 
