@@ -3,6 +3,8 @@
 
 Kaggle is an online community of data scientists and machine learning folks. It started out as a data science competition platform and has since evolved to incorporate data sets, courses, discussions, and of course notebooks. This is my place to showcase and store notebooks I made for kaggle.
 
+![notebook](https://road-to-kaggle-grandmaster.vercel.app/api/badges/jesperdramsch/notebook)
+
 ## Competition Notebooks
 ### 🥇 Intro to seismic, salt, and how to geophysics 
  [![](https://img.shields.io/badge/view-notebook-orange)](intro-to-seismic-salt-and-how-to-geophysics) [![](https://img.shields.io/badge/open-colab-yellow)](https://colab.research.google.com/github/jesperdramsch/kaggle-notebooks/blob/master/notebooks-competition/intro-to-seismic-salt-and-how-to-geophysics.ipynb) [![](https://img.shields.io/badge/kaggle-notebook-blue)](https://www.kaggle.com/intro-to-seismic-salt-and-how-to-geophysics)
