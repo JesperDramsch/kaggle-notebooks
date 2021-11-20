@@ -16,27 +16,29 @@ freestyle = {"the-reason-we-re-happy": "Exploration of the 'World Happiness Repo
             "berlin-airbnbs-is-it-really-all-about-location": "AirBnB has been a source of income for many with a spare room, but become controversial due to commercial players buying apartments to rent out on the platform. In this analysis, we are looking at AirBnB data in Berlin, Germany. The questions are, what is the main influence on price of a rental. These questions are important for tourism, city planning, and renters alike. Where do affluent tourists rent AirBnBs? What decides a good price of your flat. Where can city planners accomodate for this new development of short term rental on the market?",}
 
 ## Sad times
-correction ={"the-reason-we-re-happy": -1}
+correction = {}
 
 medal = lambda num, corr: ["", "🥉", "🥈", "🥇"][(num >= 5) + (num >= 20) + (num >= 50) + corr]
 
 string = """# Kaggle Notebooks
-[![Kaggle Profile for Jesper Dramsch](https://img.shields.io/badge/kaggle-jesperdramsch-blue)](https://www.kaggle.com/jesperdramsch/notebooks)
+[![Kaggle Profile for Jesper Dramsch](https://img.shields.io/badge/kaggle-jesperdramsch-blue)](https:dramsch.net/kaggle)
 
-Kaggle is an online community of data scientists and machine learning folks. It started out as a data science competition platform and has since evolved to incorporate data sets, courses, discussions, and of course notebooks. This is my place to showcase and store notebooks I made for kaggle.
+Kaggle is an online community of data scientists and machine learning folks. It started out as a data science competition platform and has since evolved to incorporate datasets, courses, discussions, and of course notebooks. This is my place to showcase and store notebooks I made for kaggle.
+
+[![notebook](https://road-to-kaggle-grandmaster.vercel.app/api/badges/jesperdramsch/notebook)](https://www.kaggle.com/jesperdramsch/notebooks)
 
 ## Competition Notebooks
 """
 
 for name, info in competition.items():
     kernel = api.kernels_list(search=name)[0]
-    badges = f"[![](https://img.shields.io/badge/view-notebook-orange)]({name}) [![](https://img.shields.io/badge/open-colab-yellow)](https://colab.research.google.com/github/jesperdramsch/kaggle-notebooks/blob/master/notebooks-competition/{name}.ipynb) [![](https://img.shields.io/badge/kaggle-notebook-blue)](https://www.kaggle.com/{name})"
+    badges = f"[![](https://img.shields.io/badge/view-notebook-orange)]({name}.ipynb) [![](https://img.shields.io/badge/open-colab-yellow)](https://colab.research.google.com/github/jesperdramsch/kaggle-notebooks/blob/master/notebooks-competition/{name}.ipynb) [![](https://img.shields.io/badge/kaggle-notebook-blue)](https://www.kaggle.com/jesperdramsch/{name})"
     string += f"### {medal(kernel.totalVotes, correction.get(name, 0))} {kernel.title} \n {badges}\n\n{info}\n\n"
 
 string += "## Free-style Notebooks\n"
 for name, info in freestyle.items():
     kernel = api.kernels_list(search=name)[0]
-    badges = f"[![](https://img.shields.io/badge/view-notebook-orange)]({name}) [![](https://img.shields.io/badge/open-colab-yellow)](https://colab.research.google.com/github/jesperdramsch/kaggle-notebooks/blob/master/notebooks-freestyle/{name}.ipynb) [![](https://img.shields.io/badge/kaggle-notebook-blue)](https://www.kaggle.com/{name})"
+    badges = f"[![](https://img.shields.io/badge/view-notebook-orange)]({name}.ipynb) [![](https://img.shields.io/badge/open-colab-yellow)](https://colab.research.google.com/github/jesperdramsch/kaggle-notebooks/blob/master/notebooks-freestyle/{name}.ipynb) [![](https://img.shields.io/badge/kaggle-notebook-blue)](https://www.kaggle.com/jesperdramsch/{name})"
     string += f"### {medal(kernel.totalVotes, correction.get(name, 0))} {kernel.title} \n {badges}\n\n{info}\n\n"
 
 with open("README.md", "w", encoding="utf-8") as f:
