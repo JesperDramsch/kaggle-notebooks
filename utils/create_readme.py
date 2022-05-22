@@ -38,7 +38,7 @@ Kaggle is an online community of data scientists and machine learning folks. It 
 ## Competition Notebooks
 """
 
-badge_template = ["[![](https://img.shields.io/badge/view-notebook-orange)](notebooks-competition/{name}.ipynb)",
+badge_template = ["[![](https://img.shields.io/badge/view-notebook-orange)](notebooks-{nb_type}/{name}.ipynb)",
 "[![](https://img.shields.io/badge/open-colab-yellow)](https://colab.research.google.com/github/jesperdramsch/kaggle-notebooks/blob/master/notebooks-{nb_type}/{name}.ipynb)",
 "[![](https://img.shields.io/badge/kaggle-notebook-blue)](https://www.kaggle.com/jesperdramsch/{name})",
 "[![Gradient](https://assets.paperspace.io/img/gradient-badge.svg)](https://console.paperspace.com/github/jesperdramsch/kaggle-notebooks/blob/master/notebooks-{nb_type}/{name}.ipynb)",
@@ -46,7 +46,7 @@ badge_template = ["[![](https://img.shields.io/badge/view-notebook-orange)](note
 
 
 for name, info in competition.items():
-    badges = " ".join(badge_template).format(nb_type="competiton", name=name)
+    badges = " ".join(badge_template).format(nb_type="competition", name=name)
     string += f"### {medal(total_votes.get(name, 0), correction.get(name, 0))} {name.replace('-', ' ').title()} \n {badges}\n\n{info}\n\n"
 
 string += "## Free-style Notebooks\n"
