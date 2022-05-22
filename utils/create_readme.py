@@ -47,7 +47,7 @@ badge_template = ["[![](https://img.shields.io/badge/view-notebook-orange)](note
 
 for name, info in competition.items():
     badges = " ".join(badge_template).format(nb_type="competiton", name=name)
-    string += f"### {medal(kernel.totalVotes, correction.get(name, 0))} {kernel.title} \n {badges}\n\n{info}\n\n"
+    string += f"### {medal(total_votes.get(name, 0), correction.get(name, 0))} {name.replace('-', ' ').title()} \n {badges}\n\n{info}\n\n"
 
 string += "## Free-style Notebooks\n"
 for name, info in freestyle.items():
