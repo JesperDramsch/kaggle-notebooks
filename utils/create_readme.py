@@ -15,7 +15,7 @@ freestyle = {"the-reason-we-re-happy": "Exploration of the 'World Happiness Repo
 ## Sad times
 correction = {"intro-to-connextx-env-and-minimax": -1,}
 
-total_votes = "intro-to-seismic-salt-and-how-to-geophysics": 784,
+total_votes = {"intro-to-seismic-salt-and-how-to-geophysics": 784,
               "intro-chest-xray-dicom-viz-u-nets-full-data": 450,
               "intro-to-santa-s-2019-viz-costs-22-s-and-search": 39,
               "intro-to-connextx-env-and-minimax": 56,
