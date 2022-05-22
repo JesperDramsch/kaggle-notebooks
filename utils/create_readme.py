@@ -52,7 +52,7 @@ for name, info in competition.items():
 string += "## Free-style Notebooks\n"
 for name, info in freestyle.items():
     badges = " ".join(badge_template).format(nb_type="freestyle", name=name)
-    string += f"### {medal(total_votes.get(name, 0), correction.get(name, 0))} {name.replace("-", " ").title()} \n {badges}\n\n{info}\n\n"
+    string += f"### {medal(total_votes.get(name, 0), correction.get(name, 0))} {name.replace('-', ' ').title()} \n {badges}\n\n{info}\n\n"
 
 with open("README.md", "w", encoding="utf-8") as f:
     f.write(string)
