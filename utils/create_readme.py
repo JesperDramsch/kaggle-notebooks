@@ -42,8 +42,8 @@ badge_template = ["[![](https://img.shields.io/badge/view-notebook-orange)](note
 "[![](https://img.shields.io/badge/open-colab-yellow)](https://colab.research.google.com/github/jesperdramsch/kaggle-notebooks/blob/master/notebooks-{nb_type}/{name}.ipynb)",
 "[![](https://img.shields.io/badge/kaggle-notebook-blue)](https://www.kaggle.com/jesperdramsch/{name})",
 "[![Gradient](https://assets.paperspace.io/img/gradient-badge.svg)](https://console.paperspace.com/github/jesperdramsch/kaggle-notebooks/blob/master/notebooks-{nb_type}/{name}.ipynb)",
-"[![Open In SageMaker Studio Lab](https://studiolab.sagemaker.aws/studiolab.svg)](https://studiolab.sagemaker.aws/import/github/jesperdramsch/kaggle-notebooks/blob/master/notebooks-{nb_type}/{name}.ipynb)",]
-
+"[![Open In SageMaker Studio Lab](https://studiolab.sagemaker.aws/studiolab.svg)](https://studiolab.sagemaker.aws/import/github/jesperdramsch/kaggle-notebooks/blob/master/notebooks-{nb_type}/{name}.ipynb)",
+"[![Launch in Deepnote](https://deepnote.com/buttons/launch-in-deepnote-small.svg)](https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2Fjesperdramsch%2Fkaggle-notebooks%2Fblob%2Fmaster%2Fnotebooks-{nb_type}%2F{name}.ipynb)",]
 
 for name, info in competition.items():
     badges = " ".join(badge_template).format(nb_type="competition", name=name)
